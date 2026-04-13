@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>USM Events</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-900">
+    <!-- Menu -->
+    <nav class="bg-gray-900 px-6 py-4">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="text-white font-bold text-xl">USM Events</a>
+        <!-- links -->
+        <div class="flex gap-6">
+          <a href="index.html" class="text-gray-300 hover:text-white">Inicio</a>
+          <a href="eventos.html" class="text-gray-300 hover:text-white"
+            >Eventos</a
+          >
+          <a href="comunidad.html" class="text-gray-300 hover:text-white"
+            >Comunidad</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="bg-gray-800 py-20 px-6">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <!-- colummna izquierda -->
+          <div class="flex-1">
+            <h1 class="text-white text-5xl font-bold">
+              Feria de Innovación 2026
+            </h1>
+            <p class="text-gray-300 mt-4">
+              El encuentro más importante del año para estudiantes.
+            </p>
+
+            <!-- info -->
+            <div class="flex gap-6 mt-6 text-gray-400 text-sm">
+              <span>&#128197; 7-8 de octubre</span>
+              <span>&#128205; Campus Viña del Mar</span>
+              <span>&#127903; Entrada libre</span>
+            </div>
+
+            <!-- botón -->
+            <a
+              href="eventos.html"
+              class="inline-block mt-8 bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700"
+              >Ver todos los eventos</a
+            >
+          </div>
+
+          <!-- columna derecha -->
+          <div class="flex-1">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600"
+              alt="Feria de Innovación 2026"
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- proximos eventos -->
+      <section class="bg-gray-900 py-16 px-6">
+        <h2 class="text-white text-3xl font-bold mb-8">Próximos Eventos</h2>
+
+        <!-- grid -->
+        <div class="grid grid-cols-1 md_grid-cols-3 gap-6">
+          <!-- tarjeta1 -->
+          <div class="bg-gray-700 rounded-xl p-4">
+            <p class="text-white font-bold">Evento 1</p>
+            <p class="text-gray-400 text-sm mt-1">Descripción del evento 1</p>
+          </div>
+          <!-- tarjeta2 -->
+          <div class="bg-gray-700 rounded-xl p-4">
+            <p class="text-white font-bold">Evento 2</p>
+            <p class="text-gray-400 text-sm mt-1">Descripción del evento 2</p>
+          </div>
+          <!-- tarjeta3 -->
+          <div class="bg-gray-700 rounded-xl p-4">
+            <p class="text-white font-bold">Evento 3</p>
+            <p class="text-gray-400 text-sm mt-1">Descripción del evento 3</p>
+          </div>
+        </div>
+      </section>
+      <!-- comentarios -->
+      <section class="bg-gray-800 py-16 px-6">
+        <h2 class="text-white text-3xl font-bold mb-8">
+          Comentarios de la comunidad
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- comentario1 -->
+          <div class="bg-gray-700 rounded-xl p-5">
+            <p class="text-gray-300 text-sm">comentario 1</p>
+            <div class="mt-4">
+              <p class="text-white font-bold text-sm">usuario 1</p>
+              <p class="text-gray-400 text-xs">fecha 1</p>
+            </div>
+          </div>
+          <!-- comentario2 -->
+          <div class="bg-gray-700 rounded-xl p-5">
+            <p class="text-gray-300 text-sm">comentario 2</p>
+            <div class="mt-4">
+              <p class="text-white font-bold text-sm">usuario 2</p>
+              <p class="text-gray-400 text-xs">fecha 2</p>
+            </div>
+          </div>
+          <!-- comentario3 -->
+          <div class="bg-gray-700 rounded-xl p-5">
+            <p class="text-gray-300 text-sm">comentario 3</p>
+            <div class="mt-4">
+              <p class="text-white font-bold text-sm">usuario 3</p>
+              <p class="text-gray-400 text-xs">fecha 3</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-gray-900 px-6 py-8 border-t border-gray-700">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+          <p class="text-white font-bold">Jairo Palomino</p>
+          <p class="text-gray-400 text-sm">Ingeniería en informática</p>
+          <p class="text-gray-400 text-sm">Taller lenguaje de programación</p>
+        </div>
+        <p class="text-gray-400 text-sm">© 2026 USM Events</p>
+        <div class="hidden lg:block">
+          <img src="imagen/logo-usm_blanco.png" alt="Logo USM" class="h-12" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
