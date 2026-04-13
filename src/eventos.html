@@ -7,13 +7,49 @@
     <title>Eventos</title>
   </head>
   <body class="min-h-screen flex flex-col bg-gray-900">
+    <!-- checkbox -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <!-- celular menu -->
+    <label
+      for="menu-toggle"
+      class="fixed inset-0 bg-black/50 z-10 hidden peer-checked:block md:hidden"
+    ></label>
+    <!--  celular menu lateral -->
+    <div
+      class="fixed top-0 right-0 h-full w-64 bg-gray-800 z-20 p-6 translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden"
+    >
+      <!-- celular boton cerrar-->
+      <label
+        for="menu-toggle"
+        class="text-white text-2xl cursor-pointer block mb-8 text-right"
+        >&#10005;</label
+      >
+      <!-- celular links -->
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="text-gray-300 hover:text-white text-lg"
+          >Inicio</a
+        >
+        <a href="eventos.html" class="text-gray-300 hover:text-white text-lg"
+          >Eventos</a
+        >
+        <a href="comunidad.html" class="text-gray-300 hover:text-white text-lg"
+          >Comunidad</a
+        >
+      </div>
+    </div>
     <!-- Menu -->
     <nav class="bg-gray-900 px-6 py-4">
       <div class="flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html" class="text-white font-bold text-xl">USM Events</a>
-        <!-- links -->
-        <div class="flex gap-6">
+        <!-- celular boton menu -->
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer text-white text-2xl"
+          >&#9776;</label
+        >
+        <!-- pc links -->
+        <div class="hidden md:flex gap-6">
           <a href="index.html" class="text-gray-300 hover:text-white">Inicio</a>
           <a href="eventos.html" class="text-gray-300 hover:text-white"
             >Eventos</a
@@ -24,7 +60,6 @@
         </div>
       </div>
     </nav>
-
     <main class="flex-1">
       <!-- hero -->
       <section class="bg-gray-800 py-12 px-6">
